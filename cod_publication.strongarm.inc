@@ -80,7 +80,7 @@ function cod_publication_strongarm() {
     'author' => '0',
     'options' => '1',
     'comment_settings' => '4',
-    'menu' => '-4',
+    'menu' => '-2',
     'path' => '3',
     'path_redirect' => '2',
   );
@@ -90,14 +90,14 @@ function cod_publication_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'enable_revisions_page_publication';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['enable_revisions_page_publication'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'form_build_id_publication';
-  $strongarm->value = 'form-5daf39e99e67b0640f609635ec358613';
+  $strongarm->value = 'form-80aa5918f247fdba8706d68dc09bd6d0';
   $export['form_build_id_publication'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -106,7 +106,6 @@ function cod_publication_strongarm() {
   $strongarm->name = 'node_options_publication';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'revision',
   );
   $export['node_options_publication'] = $strongarm;
 
@@ -114,7 +113,7 @@ function cod_publication_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_publication_pattern';
-  $strongarm->value = '';
+  $strongarm->value = 'newsletter/[title-raw]';
   $export['pathauto_node_publication_pattern'] = $strongarm;
 
   return $export;

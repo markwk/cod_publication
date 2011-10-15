@@ -11,9 +11,10 @@ function cod_publication_content_default_fields() {
     'field_name' => 'field_attachment',
     'type_name' => 'publication',
     'display_settings' => array(
+      'weight' => '-2',
+      'parent' => '',
       'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
+        'format' => 'inline',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -43,7 +44,7 @@ function cod_publication_content_default_fields() {
     'widget_active' => '1',
     'type' => 'filefield',
     'required' => '0',
-    'multiple' => '1',
+    'multiple' => '0',
     'module' => 'filefield',
     'active' => '1',
     'list_field' => '1',
@@ -67,7 +68,6 @@ function cod_publication_content_default_fields() {
         'imagecache_product' => 0,
         'imagecache_product_full' => 0,
         'imagecache_product_list' => 0,
-        'imagecache_sidebar_logo' => 0,
         'imagecache_sponsor_logo_bronze' => 0,
         'imagecache_sponsor_logo_callout' => 0,
         'imagecache_sponsor_logo_gold' => 0,
@@ -79,7 +79,7 @@ function cod_publication_content_default_fields() {
       'insert_class' => '',
       'insert_width' => '',
       'label' => 'Attachment',
-      'weight' => '-2',
+      'weight' => '-4',
       'description' => '',
       'type' => 'filefield_widget',
       'module' => 'filefield',

@@ -10,7 +10,9 @@ function cod_publication_user_default_permissions() {
   $permissions['create publication content'] = array(
     'name' => 'create publication content',
     'roles' => array(
-      '0' => 'site administrator',
+      '0' => 'session organizer',
+      '1' => 'site administrator',
+      '2' => 'sponsor organizer',
     ),
   );
 
@@ -34,7 +36,9 @@ function cod_publication_user_default_permissions() {
   $permissions['edit any publication content'] = array(
     'name' => 'edit any publication content',
     'roles' => array(
-      '0' => 'site administrator',
+      '0' => 'session organizer',
+      '1' => 'site administrator',
+      '2' => 'sponsor organizer',
     ),
   );
 
